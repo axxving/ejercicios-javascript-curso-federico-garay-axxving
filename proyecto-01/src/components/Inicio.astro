@@ -1,8 +1,8 @@
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
+<div class="container-fluid" id="inicio">
+  <div class="container container-inicio">
+    <div class="row row-inicio">
       <!-- Columna de la izquierda con la imagen -->
-      <div class="col-lg-6">
+      <div class="col-lg-6 izquierda">
         <img src="ruta_de_la_imagen.jpg" class="img-fluid" alt="Imagen" />
         <!-- Botones -->
         <div class="d-grid gap-2">
@@ -15,7 +15,7 @@
       </div>
 
       <!-- Columna de la derecha con las cards y los botones -->
-      <div class="col-lg-6">
+      <div class="col-lg-6 derecha">
         <!-- Cards -->
         <div class="row mb-3">
           <div class="col-6">
@@ -46,3 +46,21 @@
     </div>
   </div>
 </div>
+
+<style>
+  #inicio {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .izquierda {
+    background-color: aqua;
+  }
+
+  .derecha {
+    background-color: blue;
+  }
+</style>
